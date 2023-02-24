@@ -1,0 +1,14 @@
+
+public class TiposVariables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte b = 5;
+		short s = 128;
+		int i = 40000;
+		
+		long l = 2222222222222L;
+		
+	}
+
+}

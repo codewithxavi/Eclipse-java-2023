@@ -1,0 +1,20 @@
+
+public class Ejercicios344 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ejercicio: escribe un programa con cuatro variables de tipo entero (a, b, c y d) y uncondicional que imprima por pantalla si la suma de a y b es mayor que la suma de c y d.
+		int a=2, b=3, c=4, d=5;
+		
+		if(a+b > c+d ) {
+			System.out.println("La suma de a y b es mayor que la suma de c y d");
+		} else {
+			System.out.println("La suma de a y b es menor que la suma de c y d");
+		}
+		
+//		Ejercicio: escribe un programa que almacene tres ángulos de un triángulo en variables detipo entero (angulo1, angulo2 y angulo3). Crea un condicional que compruebe si esostres ángulos juntos pueden formar un triángulo (los ángulos de un triángulo sumansiempre 180 grados).
+//		
+//		Ejercicio: escribe un programa con una variable de tipo entero (a) y un condicional queevalúe si el entero es par o impar utilizando el operador %.
+	}
+
+}
