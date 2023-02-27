@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class EjercicioProyectoMain1 {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+
+		int numero = keyboard.nextInt();
+		
+		if (numero == 1) {
+			System.out.println("Gestores");
+		} else if (numero == 1) {
+			System.out.println("Clientes");
+		}
+		else if (numero == 1) {
+			System.out.println("Transferencias");
+		}
+		else if (numero == 1) {
+			System.out.println("Gestores");
+		}
+		else if (numero == 1) {
+			System.out.println("Gestores");
+		}
+		else {
+			System.out.println("Salir");
+		}
+
+		keyboard.close();
+	}
+
+}

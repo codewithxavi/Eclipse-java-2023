@@ -1,0 +1,12 @@
+
+
+public class ScannerTest {
+
+	public static void main(String[] args) {
+		
+		ScannerTest keyboard = new ScannerTest();
+		
+		
+	}
+
+}

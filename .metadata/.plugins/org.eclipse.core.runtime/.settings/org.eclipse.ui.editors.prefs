@@ -38,4 +38,5 @@ searchResultIndicationColor=94,94,94
 searchResultTextStyle=BOX
 secondaryIPColor=90,90,90
 spellingIndicationColor=253,170,211
+wordwrap.enabled=true
 writeOccurrenceIndicationColor=27,98,145

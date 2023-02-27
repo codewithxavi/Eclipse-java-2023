@@ -1,0 +1,13 @@
+
+public final class BreakSentencies {
+	int a = 3;
+	
+	while(true)
+	{
+		a++;
+		if (a == 6000) {
+			
+			break;
+		}
+	}
+}

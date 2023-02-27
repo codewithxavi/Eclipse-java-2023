@@ -1,0 +1,48 @@
+
+public final class Ejercicios357 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Ejercicio: escribe un programa que imprima toda la tabla de multiplicar del 5
+		// (desde 0 hasta 10).
+		// Ejercicio: escribe un programa que imprima todas las tablas de multiplicar
+		// del 1 al 9 (desde 0 hasta 10).
+		// Ejercicio: escribe un programa que dado un número, sume dicho número con
+		// todos los anteriores. Por ejemplo, para el número 5 el resultado debería ser
+		// 15 (5 + 4 + 3 + 2 + 1).
+		// Ejercicio: escribe un programa que dado un número, calcule si es primo o no.
+		// Un número primo es un número natural mayor que 1 que tiene únicamente dos
+		// divisores distintos: él mismo y el 1.
+
+//		GenerarMultiplicaDel5();
+//		GeneraTodaTablaMultiplicar();
+		
+		int numero = 5;
+		for(int i=0; i<numero; i++) {
+			int resultAnteriores = i + 1;
+			int result[];
+			
+		}
+
+	}
+
+	public static void GenerarMultiplicaDel5() {
+		for (int i = 0; i <= 10; i++) {
+			int numero = 5;
+			int resultado = numero * i;
+			System.out.println("Tabla de multiplicar del 5");
+			System.out.println(numero + "*" + i + "=" + resultado);
+		}
+	}
+
+	public static void GeneraTodaTablaMultiplicar() {
+		for (int i = 0; i <= 10; i++) {
+			for (int j = 0; j <= 10; j++) {
+				int result = i * j;
+				System.out.println(i + "*" + j + "=" + result);
+			}
+		}
+	}
+
+}
