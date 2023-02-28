@@ -1,0 +1,143 @@
+
+public class Ejercicio370 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Estudiante e1 = new Estudiante(1,26,66666666,5,12,2);
+		
+		
+	}
+	
+	static class Estudiante{
+		
+		int id = 1, edad=26;
+		int telefono;
+		int numeroDeNotas = 5;
+		int sumaDeNotas;
+		double notaMedia;
+		
+		
+		public Estudiante() {
+			this.id = 1;
+			this.edad = 36;
+			this.telefono = 666666666;
+			this.numeroDeNotas=6;
+			this.sumaDeNotas=36;
+			this.notaMedia = sumaDeNotas / numeroDeNotas;
+			
+		}
+		
+		public Estudiante(int id) {
+			this.id = id;
+			this.edad = 36;
+			this.telefono = 666666666;
+			this.numeroDeNotas=6;
+			this.sumaDeNotas=36;
+			this.notaMedia = sumaDeNotas / numeroDeNotas;
+			
+		}
+		
+		public Estudiante(int id, int edad) {
+			this.id = id;
+			this.edad = edad;
+			this.telefono = 666666666;
+			this.numeroDeNotas=6;
+			this.sumaDeNotas=36;
+			this.notaMedia = sumaDeNotas / numeroDeNotas;
+			
+		}
+		
+		
+		public Estudiante(int id, int edad, int telefono, int numeroDeNotas, int sumaDeNotas, double notaMedia) {
+			this.id = id;
+			this.edad = edad;
+			this.telefono = telefono;
+			this.numeroDeNotas = numeroDeNotas;
+			this.sumaDeNotas = sumaDeNotas;
+			this.notaMedia = notaMedia;
+		}
+
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public int getEdad() {
+			return edad;
+		}
+
+		public void setEdad(int edad) {
+			this.edad = edad;
+		}
+
+		public int getTelefono() {
+			return telefono;
+		}
+
+		public void setTelefono(int telefono) {
+			this.telefono = telefono;
+		}
+
+		public int getNumeroDeNotas() {
+			return numeroDeNotas;
+		}
+
+		public void setNumeroDeNotas(int numeroDeNotas) {
+			this.numeroDeNotas = numeroDeNotas;
+		}
+
+		public int getSumaDeNotas() {
+			return sumaDeNotas;
+		}
+
+		public void setSumaDeNotas(int sumaDeNotas) {
+			this.sumaDeNotas = sumaDeNotas;
+		}
+
+		public double getNotaMedia() {
+			return notaMedia;
+		}
+
+		public void setNotaMedia(double notaMedia) {
+			this.notaMedia = notaMedia;
+		}
+
+		
+		
+		public void mostrarInfo() {
+			
+		}
+		
+		public void agregarNuevaNota() {
+			
+		}
+		
+	}
+
+	static class Coche{
+		float velocidad;
+		float caballos;
+		int asientos;
+		int orientacionRuedas;
+		
+		
+		
+		public Coche(float velocidad, float caballos, int asientos, int orientacionRuedas) {
+			this.velocidad = velocidad;
+			this.caballos = caballos;
+			this.asientos = asientos;
+			this.orientacionRuedas = orientacionRuedas;
+		}
+		
+		
+		
+		void parar() {}
+		void acelerar() {}
+		void desacelerar() {}
+		void girarIzquierda() {}
+		void girarDerecha() {}
+	}
+}

@@ -1,0 +1,18 @@
+
+public class MainSuma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// invocación al método suma
+		int a = MainSuma.suma(2, 3);
+		// imprime 5
+		System.out.println(a);
+		// imprime 5
+		System.out.println(MainSuma.suma(1, 4));
+	}
+
+	public static int suma(int x, int y) {
+		return x + y;
+	}
+
+}
