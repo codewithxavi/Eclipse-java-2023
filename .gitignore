@@ -1,4 +1,7 @@
 ### Java ###
+#Metadata
+*.metadata
+
 # Compiled class file
 *.class
 
