@@ -5,7 +5,7 @@ public class EjerciciosStringBuilder {
 		// TODO Auto-generated method stub
 		// Concateno2StringBuilder();
 		// EliminarUltimo();
-		//InsertarCadaTres();
+		InsertarCadaTres();
 		GeneraMayuscula();
 	}
 
@@ -31,13 +31,11 @@ public class EjerciciosStringBuilder {
 	public static void InsertarCadaTres() {
 
 		StringBuilder sb1 = new StringBuilder("Hola Xavi que tal estás?");
-        int len = sb1.length();
-        
-        // Insert 'b' every three positions
-        for (int i = 3; i < len; i += 4) {
-            sb1.insert(i, 'b');
+        for (int i=3; i<sb1.length(); i += 4) {
+        	sb1.insert(i, 'b');
         }
-        
+       
+   
         System.out.println(sb1);
 		
 		
@@ -55,8 +53,6 @@ public class EjerciciosStringBuilder {
 				
 			}
 		}
-		
-		
 		
 	}
 	
