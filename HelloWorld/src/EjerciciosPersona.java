@@ -17,7 +17,14 @@ public class EjerciciosPersona {
 		
 	}
 	
-	static abstract class Persona {
+	
+	static interface PersonaInterfaz{
+		public abstract void mostrarID();
+
+	}
+	
+	
+	static abstract class Persona implements PersonaInterfaz {
 		
 		protected int id, edad, telefono;
 		
@@ -46,8 +53,14 @@ public class EjerciciosPersona {
 		}
 
 		public void mostrarInfo() {}
+
+//		@Override
+//		public void mostrarID() {
+//			// TODO Auto-generated method stub
+//			
+//		}
+//		
 		
-		public abstract void mostrarID();
 		
 	}
 	
@@ -164,6 +177,7 @@ public class EjerciciosPersona {
 		public void mostrarInfo() {
 			System.out.println(this.getNumeroDeEdadesEstudiantes() + "+" + this.getSumaDeEdadesEstudiantes() + "+ " + this.getEstudiantesEdadMedia());
 		}
+
 
 		@Override
 		public void mostrarID() {
