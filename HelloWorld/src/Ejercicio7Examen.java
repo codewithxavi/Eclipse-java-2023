@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EjercicioProyectoMain5 {
+public class Ejercicio7Examen {
 
 	public static void main(String[] args) {
 
@@ -110,8 +110,7 @@ public class EjercicioProyectoMain5 {
 				break;
 			}
 		} while (!opcion.equals("6"));
-		
-	
+
 	}
 
 	public static void MostrarClientes() {
@@ -175,19 +174,19 @@ public class EjercicioProyectoMain5 {
 
 			switch (opcion) {
 			case "1":
-				System.out.println("Ha seleccionado añadir cliente.");
+				System.out.println("Ha seleccionado añadir transferencia.");
 				break;
 			case "2":
-				System.out.println("Ha seleccionado modificar cliente.");
+				System.out.println("Ha seleccionado modificar transferencia.");
 				break;
 			case "3":
-				System.out.println("Ha seleccionado eliminar cliente.");
+				System.out.println("Ha seleccionado eliminar transferencia.");
 				break;
 			case "4":
-				System.out.println("Ha seleccionado ver cliente.");
+				System.out.println("Ha seleccionado ver transferencia.");
 				break;
 			case "5":
-				System.out.println("Ha seleccionado ver clientes.");
+				System.out.println("Ha seleccionado ver transferencias.");
 				break;
 			case "6":
 				System.out.println("Ha seleccionado volver.");
@@ -218,19 +217,19 @@ public class EjercicioProyectoMain5 {
 
 			switch (opcion) {
 			case "1":
-				System.out.println("Ha seleccionado añadir cliente.");
+				System.out.println("Ha seleccionado añadir mensaje.");
 				break;
 			case "2":
-				System.out.println("Ha seleccionado modificar cliente.");
+				System.out.println("Ha seleccionado modificar mensaje.");
 				break;
 			case "3":
-				System.out.println("Ha seleccionado eliminar cliente.");
+				System.out.println("Ha seleccionado eliminar mensaje.");
 				break;
 			case "4":
-				System.out.println("Ha seleccionado ver cliente.");
+				System.out.println("Ha seleccionado ver mensaje.");
 				break;
 			case "5":
-				System.out.println("Ha seleccionado ver clientes.");
+				System.out.println("Ha seleccionado ver mensajes.");
 				break;
 			case "6":
 				System.out.println("Ha seleccionado volver.");
@@ -244,7 +243,46 @@ public class EjercicioProyectoMain5 {
 	}
 
 	public static void MostrarPrestamos() {
-		System.out.println("Ha seleccionado Prestamos.");
+		Scanner scanner = new Scanner(System.in);
+		String opcion;
+
+		do {
+			System.out.println("Ha seleccionado prestamos.");
+			System.out.println("1 - Añadir prestamo");
+			System.out.println("2 - Modificar prestamo");
+			System.out.println("3 - Eliminar prestamo");
+			System.out.println("4 - Ver prestamo");
+			System.out.println("5 - Ver prestamos");
+			System.out.println("6 - Volver");
+			System.out.println("Introduzca un número del 1-6:");
+
+			opcion = scanner.nextLine();
+
+			switch (opcion) {
+			case "1":
+				System.out.println("Ha seleccionado añadir prestamo.");
+				break;
+			case "2":
+				System.out.println("Ha seleccionado modificar prestamo.");
+				break;
+			case "3":
+				System.out.println("Ha seleccionado eliminar prestamo.");
+				break;
+			case "4":
+				System.out.println("Ha seleccionado ver prestamo.");
+				break;
+			case "5":
+				System.out.println("Ha seleccionado ver prestamos.");
+				break;
+			case "6":
+				System.out.println("Ha seleccionado volver.");
+				opcion = "6";
+				break;
+			default:
+				System.out.println("La opción seleccionada no es válida.");
+				break;
+			}
+		} while (!opcion.equals("6"));
 	}
 
 	static class Gestor {
