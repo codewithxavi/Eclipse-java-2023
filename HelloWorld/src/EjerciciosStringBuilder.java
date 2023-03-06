@@ -5,12 +5,15 @@ public class EjerciciosStringBuilder {
 		// TODO Auto-generated method stub
 		// Concateno2StringBuilder();
 		// EliminarUltimo();
-		//InsertarCadaTres();
+		// InsertarCadaTres();
+
+		// StringBuilder sb = new StringBuilder("este es un ejemplo de texto en
+		// minúsculas");
+		// System.out.println("Texto original: " + sb);
+		// convertirPrimerasLetrasMayuscula(sb);
+		// System.out.println("Texto modificado: " + sb);
 		
-		//StringBuilder sb = new StringBuilder("este es un ejemplo de texto en minúsculas");
-		//System.out.println("Texto original: " + sb);
-		//convertirPrimerasLetrasMayuscula(sb);
-		//System.out.println("Texto modificado: " + sb);
+		Revertido();
 	}
 
 	// Ejercicio: escribe un programa que concatene dos StringBuilder, utilizando
@@ -56,6 +59,17 @@ public class EjerciciosStringBuilder {
 				capitalize = false;
 			}
 		}
+	}
+
+	// Ejercicio reverse StringBuilder
+	public static void Revertido() {
+		String original = "Hola Xavi!";
+		StringBuilder sb = new StringBuilder(original);
+		sb.reverse();
+		String invertida = sb.toString();
+		System.out.println("Original: " + original);
+		System.out.println("Invertida: " + invertida);
+
 	}
 
 	// Ejercicio: escribe un programa para invertir cada palabra de un párrafo de un StringBuilder.
