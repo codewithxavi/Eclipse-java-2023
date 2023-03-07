@@ -4,6 +4,8 @@
     <fullyQualifiedTypeName name="EjercicioVehiculos.Vehiculo"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="EjercicioVehiculos.Coche"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Ejercicio6ExamenAnimales.Leopardo"/>
 </qualifiedTypeNameHistroy>
