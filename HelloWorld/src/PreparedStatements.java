@@ -26,17 +26,31 @@ public class PreparedStatements {
 			ps3.setString(1, "gestor12");
 			ps3.setString(2, "gestor12");
 			ps3.setString(3, "gestor12@correo.com");
+			
+			
 			// cuarta sentencia SQL que formará parte de la transacción y fallará si existe un registro con id = 4
 			PreparedStatement ps4 = conexion.prepareStatement("INSERT INTO gestor(id,usuario, password, correo) VALUES (?,?,?,?) ");
 			ps4.setInt(1, 4);
 			ps4.setString(2, "gestor12");
 			ps4.setString(3, "gestor12");
 			ps4.setString(4, "gestor12@correo.com");
+			
+			PreparedStatement psUpdate = conexion.prepareStatement("UPDATE gestor SET password = ? WHERE id = ?");
+			psUpdate.setString(1, "nuevaContraseña");
+			psUpdate.setInt(2, 1); // aquí se puede cambiar 1 por el ID del gestor que se quiera actualizar
+			int rowsAffected = psUpdate.executeUpdate();
+			System.out.println(rowsAffected + " registro(s) actualizado(s)");
+
+			 // Preparar sentencia SQL para borrar un gestor
+            PreparedStatement psDelete = conexion.prepareStatement("DELETE FROM gestor WHERE id = ?");
+            ps4.setInt(1, 4);
+			
 			// se añaden todas las sentencias SQL a la transacción
 			ps1.execute();
 			ps2.execute();
 			ps3.execute();
 			//ps4.execute();
+			psUpdate.execute();
 			// se ejecutan todas las sentencias SQL de la transacción
 			conexion.commit();
 			System.out.println("Programa finalizado");
